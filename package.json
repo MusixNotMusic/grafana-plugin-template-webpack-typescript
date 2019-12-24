@@ -4,7 +4,8 @@
   "description": "Some description",
   "main": "dist/module",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack --config build/webpack.prod.conf.js",
+    "dev": "webpack --config build/webpack.dev.conf.js"
   },
   "keywords": [],
   "author": "Alexey Velikiy",

@@ -65,41 +65,36 @@ define(["app/plugins/sdk"], function(__WEBPACK_EXTERNAL_MODULE_1__) { return /**
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PanelCtrl", function() { return Ctrl; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_grafana_app_plugins_sdk__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_grafana_app_plugins_sdk___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_grafana_app_plugins_sdk__);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var sdk_1 = __webpack_require__(1);
-
-var Ctrl = function (_sdk_1$PanelCtrl) {
-    _inherits(Ctrl, _sdk_1$PanelCtrl);
-
+var Ctrl = /** @class */ (function (_super) {
+    __extends(Ctrl, _super);
     function Ctrl($scope, $injector) {
-        _classCallCheck(this, Ctrl);
-
-        return _possibleConstructorReturn(this, (Ctrl.__proto__ || Object.getPrototypeOf(Ctrl)).call(this, $scope, $injector));
+        return _super.call(this, $scope, $injector) || this;
     }
-
-    _createClass(Ctrl, [{
-        key: "link",
-        value: function link(scope, element) {}
-    }]);
-
+    Ctrl.prototype.link = function (scope, element) {
+    };
+    Ctrl.template = "<div>Hello from <b>TypeScript Template Plugin</b></div>";
     return Ctrl;
-}(sdk_1.PanelCtrl);
+}(__WEBPACK_IMPORTED_MODULE_0_grafana_app_plugins_sdk__["PanelCtrl"]));
 
-Ctrl.template = "<div>Hello from <b>TypeScript Template Plugin</b></div>";
-exports.PanelCtrl = Ctrl;
+
 
 /***/ }),
 /* 1 */
